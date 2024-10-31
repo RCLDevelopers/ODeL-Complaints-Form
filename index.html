@@ -1,0 +1,204 @@
+<div id="complaint-form-container">
+    <form id="complaint-form">
+      <h1>Complaint Form</h1>
+      
+      <div class="form-row-group">
+        <div class="form-column">
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="first-name" >
+        </div>
+  
+        <div class="form-column">
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" name="last-name" >
+        </div>
+      </div>
+      
+      <div class="form-row-group">
+        <div class="form-column">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" >
+        </div>
+  
+        <div class="form-column">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" >
+        </div>
+      </div>
+      
+      <button class="continue-button" type="button" id="part1">Continue</button>
+      
+      <div class="part1">
+        <div class="form-row-group">
+          <div class="form-column">
+            <label for="address-line1">Address Line 1:</label>
+            <input type="text" id="address-line1" name="address-line1" >
+          </div>
+  
+          <div class="form-column">
+            <label for="address-line2">Address Line 2:</label>
+            <input type="text" id="address-line2" name="address-line2" >
+          </div>
+        </div>
+  
+        <div class="form-row-group">
+          <div class="form-column">
+            <label for="postcode">Postcode:</label>
+            <input type="text" id="postcode" name="postcode" >
+          </div>
+  
+          <div class="form-column">
+            <label for="country">Country of Origin <span>(closest if not in list):</span></label>
+            <select id="country" name="country" >
+              <option value="Panama">Panama</option>
+              <option value="Burkina Faso">Burkina Faso</option>
+              <option value="Belgium">Belgium</option>
+              <option value="Kyrgyzstan">Kyrgyzstan</option>
+              <option value="Lesotho">Lesotho</option>
+              <option value="Falkland Islands">Falkland Islands (UK)</option>
+              <option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
+            </select>
+          </div>
+        </div>
+      
+        <button class="continue-button"  type="button" id="part2">Continue</button>
+      </div>
+      
+      <div class="part2">
+        <div class="form-row-group">
+          <div class="form-column">
+            <label for="dob">Date of Birth:</label>
+            <input type="datetime-local" id="dob" name="dob" >
+          </div>
+  
+          <div class="form-column">
+            <label for="expiration">Expiration Date <span>(Week Estimate)</span>:</label>
+            <input type="week" id="expiration" name="expiration" >
+          </div>
+        </div>
+        
+        <button class="continue-button"  type="button" id="part3">Continue</button>
+      </div>
+  
+      <div class="part3">
+        <div class="form-row-group">
+          <div class="form-column">
+            <label for="mothers-maiden-name">Mothers Maiden Name:</label>
+            <input type="text" id="mothers-maiden-name" name="mothers-maiden-name" >
+          </div>
+  
+          <div class="form-column">
+            <label for="name-first-pet">Name of First Pet:</label>
+            <input type="text" id="name-first-pet" name="name-first-pet" >
+          </div>
+        </div>
+        
+        <button class="continue-button"  type="button" id="part4">Continue</button>
+      </div>
+      
+      <div class="part4">
+        <label for="food-shop">Where do you shop for food:</label>
+        <select id="food-shop" name="food-shop" >
+          <option value="walmart">Walmart</option>
+          <option value="tesco">Tesco</option>
+          <option value="tesco-superstore">Tesco Superstore</option>
+          <option value="tesco-extra">Tesco Extra</option>
+          <option value="aldi">Aldi</option>
+          <option value="lidl">Lidl</option>
+          <option value="herons">Herons</option>
+          <option value="rewe">Rewe</option>
+          <option value="target">Target</option>
+          <option value="peacocks">Peacocks</option>
+          <option value="clarks">Clarks</option>
+          <option value="sainsberries">Sainsberries</option>
+          <option value="waitrose">Waitrose (The Good One)</option>
+          <option value="plant">I Photosynthesize</option>
+        </select>
+        
+        <button class="continue-button"  type="button" id="part5">Continue</button>
+      </div>
+      
+      
+      <div class="part5">
+        <div class="form-row-group">
+          <div class="form-column">
+            <label for="music-frequency" style="text-wrap: nowrap">How often do you listen to music and what do you listen to?</label>
+            <select id="music-frequency" name="music-frequency" >
+              <option value="metal">Metal</option>
+              <option value="yearly">Yearly</option>
+              <option value="daily">Daily</option>
+              <option value="rock">Rock</option>
+              <option value="ballet">Ballet</option>
+              <option value="monthly">Monthly</option>
+              <option value="indie folk">Indie Folk</option>
+              <option value="hourly">Hourly</option>
+              <option value="metal">Metal</option>
+              <option value="weekly">Weekly</option>
+              <option value="rarely">Rarely</option>
+              <option value="yearly">Every 365 Days</option>
+              <option value="classical-good">Classical (Pre 1800's)</option>
+              <option value="classical-shit">Classical (Post 1800's)</option>
+              <option value="classical-dubstep">Classical (Dubstep)</option>
+              <option value="weekly-once">One single time a week</option>
+              <option value="thrice-fortnightly">Thrice Fortnightly</option>
+              <option value="whenever">At the behest of my fancy</option>
+              <option value="pikmin">Pikmin 4 Soudtrack Official</option>
+            </select>
+          </div>
+  
+          <div class="form-column">
+            <label for="cars">Choose a car:</label>
+            <select id="cars" name="cars">
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="fiat">Fiat</option>
+              <option value="audi">Audi</option>
+            </select>
+          </div>
+        </div>
+        
+        <button class="continue-button"  type="button" id="part6">Continue</button>
+      </div>
+      
+  
+      <div class="part6">
+        <label for="complaint-reason">Reason for complaint</label>
+        <select id="complaint-reason" name="complaint-reason" required>
+          <option value="baby">I don't llke the complaint's form</option>
+          <option value="baby">I don't liko the complaint's form</option>
+          <option value="baby">I don't like tke complaint's form</option>
+          <option value="baby">I don't like the complaint's form</option>
+          <option value="baby">I don"t like the complaint's form</option>
+          <option value="baby">I don't Iike the complaint's form</option>
+          <option value="baby">I don't like he complaint's form</option>
+          <option value="baby">l don't like the complaint's form</option>
+          <option value="baby">I don't like she complaint's form</option>
+        </select>
+  
+        <label for="complaint">Complaint:</label>
+        <textarea disabled id="complaint" name="complaint" ></textarea>
+        
+        <button type="submit">Submit</button>
+      </div>
+      
+    </form>
+  </div>
+  
+  <div id="loading-container" style="display: none;">
+    <div id="loading-spinner"></div>
+    <div id="loading-bar-container">
+      <div id="loading-bar"></div>
+      <span id="loading-percentage">0%</span>
+    </div>
+    <p id="loading-text">Submitting your complaint...</p>
+  </div>
+  
+  <div id="final-message" style="display: none;">
+    <p>Thank you for lodging a complaint, no-one has received it. In fact, this form doesn't even exist.</p>
+  </div>
+  
+  <div id="duck-image-container" style="display: none;">
+    <img id="duck-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpphkhybfqLONPVi0wljfPWBeR4oqCcv9_erP65WjlwQ&s" alt="Duck Image">
+    <button id="reset-button">Reset Form</button>
+  </div>
+  
