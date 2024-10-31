@@ -1,138 +1,150 @@
-body {
-    font-family: calibri, sans-serif;
-    background-color: #f4f4f4;
+/* 
+*  ----- Reset -----
+*/
+*,
+*:after,
+*:before {
     margin: 0;
-    padding: 20px;
-  }
-  
-  #complaint-form-container,
-  #loading-container,
-  #final-message,
-  #duck-image-container {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  #complaint-form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  #complaint-form h1 {
-    font-size: 40px;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*  
+*  ----- Google Fonts & Typography -----
+*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black&display=swap');
+
+h4 {
+    font-family: 'Archivo Black', serif;
+    font-size: 35px;
+    line-height: 28px;
+    color: #1b1b1c;
+    text-transform: uppercase;
     text-align: center;
-    margin-top: 0;
-  }
-  
-  #complaint-form .form-row-group {
-    display: flex;
-    gap: 15px;
-  }
-  
-  #complaint-form .form-row-group .form-column {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  #complaint-form label {
+    padding: 1em;
+}
+
+/*  
+*  ----- General Styles -----
+*/
+body {
+    background-color: #ffffff;
+    font-family: 'Montserrat', serif;
+    font-size: 1em;
+    color: #232730;
+    width: 85%;
+    margin: 0 auto;
+}
+
+/*  
+*  ----- Simple Grid/Columns -----
+*/
+[class*='column-'] {
+    float: left;
+    padding: 1em;
+    min-height: 1px; 
+}
+
+.row::before,
+.row::after {
+    content: " ";
+    display: table;
+}
+
+.row::after {
+    clear: both;
+}
+
+@media only screen and (min-width: 75em) {
+    .column-6 {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 75em) and (min-width: 55em) {
+    .column-6 {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 55em) {
+    .column-6 {
+        width: 100%;
+        float: none; 
+    }
+}
+
+/*  
+*  ----- All Forms -----
+*/
+fieldset {
+    border-width: 0;
+    border-color: #f3f3f3;
+    margin: 2em 1em;
+}
+
+legend {
+    text-align: center;
+    margin-bottom: 2em;
+    text-transform: uppercase;
+}
+
+form input[type="text"],
+form input[type="tel"] {
+    padding: 1em;
+    margin-bottom: 2em;
     display: block;
-    margin: 10px 0 5px;
-  }
-  
-  #complaint-form label span {
-    font-size: 14px;
-    opacity: 0.8;
-  }
-  
-  #complaint-form input,
-  #complaint-form textarea,
-  #complaint-form select,
-  #complaint-form button {
-    padding: 10px;
-    margin-bottom: 10px;
-    height: 100%;
-    width: 100%;
-  }
-  
-  #complaint-form button {
-    background-color: #007bff;
-    color: #fff;
     border: none;
-    cursor: pointer;
-    margin-top: 15px;
+    border-bottom: 2px solid #1b1b1c;
     width: 100%;
-  }
-  
-  #complaint-form button:hover {
-    background-color: #0056b3;
-  }
-  
-  #complaint-form .part1,
-  #complaint-form .part2,
-  #complaint-form .part3,
-  #complaint-form .part4,
-  #complaint-form .part5,
-  #complaint-form .part6 {
-    display: none;
-  }
-  
-  #loading-spinner {
-    border: 4px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    border-top: 4px solid #007bff;
-    width: 40px;
-    height: 40px;
-    animation: spin 1s linear infinite;
-    margin: 20px auto;
-  }
-  
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
-  #loading-bar-container {
-    width: 100%;
-    background-color: #ddd;
-    height: 20px;
-    margin: 20px 0;
-    position: relative;
-  }
-  
-  #loading-bar {
-    width: 0;
-    height: 100%;
-    background-color: #007bff;
-    position: absolute;
-  }
-  
-  #loading-percentage {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    line-height: 20px;
-  }
-  
-  #loading-text {
-    text-align: center;
-  }
-  
-  #duck-image-container img {
-    width: 100%;
-    height: auto;
-  }
-  
-  #reset-button {
+}
+
+form input[type="text"]:hover,
+form input[type="tel"]:hover {
+    border: none;
+    border-bottom: 2px solid #64008f;
+    background: #f3f3f3;
+}
+
+form input[type="submit"] {
     display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-  }
+    margin: auto;
+    padding: 2em 3em;
+    font-family: 'Archivo Black', serif;
+    background-image: linear-gradient(45deg, #64008f, #ad4baa);
+    color: #ffffff;
+    text-transform: uppercase;
+    border: none;
+    width: 80%;
+}
+
+form input[type="submit"]:hover {
+    background: #1b1b1c;
+}
+
+form label {
+    font-family: 'Archivo Black', serif;
+    text-transform: uppercase;
+    color: #1b1b1c;
+}
+
+/*  
+*  ----- Unique Forms -----
+*/
+.contact-sales-form {
+    -webkit-box-shadow: 0px 3px 6px -2px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0px 3px 6px -2px rgba(0,0,0,0.7);
+    -o-box-shadow: 0px 3px 6px -2px rgba(0,0,0,0.7);
+    -ms-box-shadow: 0px 3px 6px -2px rgba(0,0,0,0.7);
+    box-shadow: 0px 3px 6px -2px rgba(0,0,0,0.7);
+    padding: 2em;
+}
+
+.contact-sales-form .instructions {
+    text-align: center;
+    padding: 2em 1em;
+    background: #f3f3f3;
+}
