@@ -115,10 +115,11 @@ form input[type="tel"]:hover {
 }
 
 form input[type="submit"] {
+  border: none;
     display: block;
     margin: auto;
     padding: 2em 3em;
-    font-family: 'Archivo Black', serif;
+    font-family: 'Montserrat', serif;
     background-image: linear-gradient(45deg, #047eb3, #009ade);
     color: #ffffff;
     text-transform: uppercase;
@@ -127,7 +128,7 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-    background: #1b1b1c;
+    background: #00a42e;
 }
 
 form label {
