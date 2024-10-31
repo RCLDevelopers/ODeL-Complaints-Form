@@ -95,7 +95,9 @@ legend {
 form input[type="text"],
 form input[type="tel"] 
 {
-    padding: 1em;
+  font-family: 'Montserrat', serif;
+  font-size: 1em;
+  padding: 1em;
     margin-bottom: 2em;
     display: block;
     border: none;
@@ -105,6 +107,8 @@ form input[type="tel"]
 
 form input[type="text"]:hover,
 form input[type="tel"]:hover {
+    font-family: 'Montserrat', serif;
+    font-size: 1em;
     border: none;
     border-bottom: 2px solid #64008f;
     background: #f3f3f3;
@@ -131,6 +135,24 @@ form label {
     text-transform: uppercase;
     color: #1b1b1c;
 }
+/*  
+*  ----- Text area -----
+*/ 
+textarea {
+  font-family: 'Montserrat', serif;
+  font-size: 1em;
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
+
 
 /*  
 *  ----- Unique Forms -----
