@@ -18,10 +18,10 @@
 @import url('https://fonts.googleapis.com/css?family=Archivo+Black&display=swap');
 
 h4 {
-    font-family: 'Archivo Black', serif;
-    font-size: 35px;
+    font-family: 'Montserrat', serif;
+    font-size: 25px;
     line-height: 28px;
-    color: #1b1b1c;
+    color: #009ade;
     text-transform: uppercase;
     text-align: center;
     padding: 1em;
@@ -93,7 +93,8 @@ legend {
 }
 
 form input[type="text"],
-form input[type="tel"] {
+form input[type="tel"] 
+{
     padding: 1em;
     margin-bottom: 2em;
     display: block;
