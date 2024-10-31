@@ -15,70 +15,70 @@ body {
     background: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
   
-    #complaint-form {
-      display: flex;
-      flex-direction: column;
+  #complaint-form {
+    display: flex;
+    flex-direction: column;
+  }
   
-      h1 {
-        font-size: 40px;
-        text-align: center;
-        margin-top: 0;
-      }
+  #complaint-form h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 0;
+  }
   
-      .form-row-group {
-        display: flex;
-        gap: 15px;
+  #complaint-form .form-row-group {
+    display: flex;
+    gap: 15px;
+  }
   
-        .form-column {
-          width: 50%;
-          display: flex;
-          flex-direction: column;
-        }
-      }
+  #complaint-form .form-row-group .form-column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
   
-      label {
-        display: block;
-        margin: 10px 0 5px;
+  #complaint-form label {
+    display: block;
+    margin: 10px 0 5px;
+  }
   
-        span {
-          font-size: 14px;
-          opacity: 0.8;
-        }
-      }
+  #complaint-form label span {
+    font-size: 14px;
+    opacity: 0.8;
+  }
   
-      input,
-      textarea,
-      select,
-      button {
-        padding: 10px;
-        margin-bottom: 10px;
-        height: 100%;
-        width: 100%;
-      }
+  #complaint-form input,
+  #complaint-form textarea,
+  #complaint-form select,
+  #complaint-form button {
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 100%;
+    width: 100%;
+  }
   
-      button {
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        cursor: pointer;
-        margin-top: 15px;
-        width: 100%;
-      }
+  #complaint-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+  }
   
-      button:hover {
-        background-color: #0056b3;
-      }
+  #complaint-form button:hover {
+    background-color: #0056b3;
+  }
   
-      .part1,
-      .part2,
-      .part3,
-      .part4,
-      .part5,
-      .part6 {
-        display: none;
-      }
-    }
+  #complaint-form .part1,
+  #complaint-form .part2,
+  #complaint-form .part3,
+  #complaint-form .part4,
+  #complaint-form .part5,
+  #complaint-form .part6 {
+    display: none;
   }
   
   #loading-spinner {
@@ -136,4 +136,3 @@ body {
     margin: 20px auto;
     padding: 10px 20px;
   }
-  
