@@ -101,7 +101,7 @@ form input[type="tel"]
     margin-bottom: 2em;
     display: block;
     border: none;
-    border-bottom: 2px solid #1b1b1c;
+    border-bottom: 2px solid #2b2b2b;
     width: 100%;
 }
 
@@ -110,7 +110,7 @@ form input[type="tel"]:hover {
     font-family: 'Montserrat', serif;
     font-size: 1em;
     border: none;
-    border-bottom: 2px solid #64008f;
+    border-bottom: 2px solid #009ade;
     background: #f3f3f3;
 }
 
@@ -119,10 +119,10 @@ form input[type="submit"] {
     margin: auto;
     padding: 2em 3em;
     font-family: 'Archivo Black', serif;
-    background-image: linear-gradient(45deg, #64008f, #ad4baa);
+    background-image: linear-gradient(45deg, #047eb3, #009ade);
     color: #ffffff;
     text-transform: uppercase;
-    border: none;
+    border-radius: 90px;
     width: 80%;
 }
 
@@ -131,7 +131,7 @@ form input[type="submit"]:hover {
 }
 
 form label {
-    font-family: 'Archivo Black', serif;
+    font-family: 'Montserrat', serif;
     text-transform: uppercase;
     color: #1b1b1c;
 }
@@ -155,8 +155,6 @@ textarea {
 /*  
 *  ----- Upload image -----
 */ 
-
-
 
 
 
